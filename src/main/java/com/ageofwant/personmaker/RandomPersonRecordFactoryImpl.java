@@ -1,13 +1,9 @@
-package thys.org.personmaker;
+package com.ageofwant.personmaker;
 
+import com.ageofwant.personmaker.models.Address;
+import com.ageofwant.personmaker.models.PersonRecord;
 import java.util.Random;
-import thys.org.personmaker.models.Address;
-import thys.org.personmaker.models.PersonRecord;
 
-/**
- *
- * @author meithy0
- */
 public class RandomPersonRecordFactoryImpl implements PersonRecordFactory {
 
     private static final String[] NAMES = new String[]{
@@ -50,7 +46,7 @@ public class RandomPersonRecordFactoryImpl implements PersonRecordFactory {
     private static Character[] GENDER = new Character[]{'M', 'F'};
     private Random rnd = new Random();
     private AddressFactory addressFactory = new RandomAddressFactoryImpl();
-    
+
     @Override
     public PersonRecord getPersonRecord() {
         PersonRecord randomRecord = new PersonRecord(

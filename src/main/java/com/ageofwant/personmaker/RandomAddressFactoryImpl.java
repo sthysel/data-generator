@@ -1,14 +1,10 @@
-package thys.org.personmaker;
+package com.ageofwant.personmaker;
 
+import com.ageofwant.personmaker.models.Address;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import thys.org.personmaker.models.Address;
 
-/**
- *
- * @author meithy0
- */
 public class RandomAddressFactoryImpl implements AddressFactory {
 
     private Random rand = new Random();

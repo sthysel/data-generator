@@ -1,15 +1,9 @@
-package thys.org.wowpersonmaker;
+package com.ageofwant.wowpersonmaker;
 
-import thys.org.personmaker.RandomAddressFactoryImpl;
+import com.ageofwant.personmaker.RandomAddressFactoryImpl;
+import com.ageofwant.personmaker.models.Address;
 import org.junit.*;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-import thys.org.personmaker.models.Address;
 
-/**
- *
- * @author meithy0
- */
 public class RandomAddressFactoryImplTest {
 
     public RandomAddressFactoryImplTest() {
@@ -37,7 +31,7 @@ public class RandomAddressFactoryImplTest {
     @Test
     public void testGetAddress() {
         System.out.println("getAddress");
-        RandomAddressFactoryImpl instance = new RandomAddressFactoryImpl();     
+        RandomAddressFactoryImpl instance = new RandomAddressFactoryImpl();
         Address result = instance.getAddress();
         System.out.println(result);
     }

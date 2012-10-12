@@ -1,12 +1,8 @@
-package thys.org.personmaker.models;
+package com.ageofwant.personmaker.models;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author meithy0
- */
 public final class Address {
 
     private List<String> lines = new <String>ArrayList();
@@ -39,13 +35,13 @@ public final class Address {
     public List getLines() {
         return lines;
     }
-    
+
     @Override
     public String toString() {
         StringBuilder bld = new StringBuilder();
         for (String line : lines) {
             bld.append(line).append("\n");
-        }      
+        }
         bld.append(state).append("\n");
         bld.append(postcode).append("\n");
         return bld.toString();

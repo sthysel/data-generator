@@ -1,16 +1,11 @@
-package thys.org.wowpersonmaker;
+package com.ageofwant.wowpersonmaker;
 
-import thys.org.personmaker.RandomPersonRecordFactoryImpl;
+import com.ageofwant.personmaker.RandomPersonRecordFactoryImpl;
+import com.ageofwant.personmaker.models.PersonRecord;
 import org.junit.*;
-import static org.junit.Assert.*;
-import thys.org.personmaker.models.PersonRecord;
 
-/**
- *
- * @author meithy0
- */
 public class RandomPersonRecordFactoryImplTest {
-    
+
     public RandomPersonRecordFactoryImplTest() {
     }
 
@@ -21,11 +16,11 @@ public class RandomPersonRecordFactoryImplTest {
     @AfterClass
     public static void tearDownClass() throws Exception {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }

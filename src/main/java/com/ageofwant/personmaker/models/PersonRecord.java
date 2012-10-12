@@ -1,9 +1,5 @@
-package thys.org.personmaker.models;
+package com.ageofwant.personmaker.models;
 
-/**
- *
- * @author meithy0
- */
 public final class PersonRecord {
 
     private String name;
